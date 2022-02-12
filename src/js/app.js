@@ -29,8 +29,13 @@ const elements = document.querySelectorAll('.acardion-title');
 const accardions = document.querySelectorAll('.acardion-item');
 const accardionsTitle = document.querySelectorAll('.acardion-title');
 const hamburger = document.querySelector('.hamburger');
-const menuList = document.querySelector('.menu-list');
+const menuList = document.querySelector('.menu-body');
+const menu = document.querySelector('.menu');
 const body = document.querySelector('body');
+const startedLink = document.querySelector('.started-link');
+
+
+
 /* нумерация аккардиона  */
 elements.forEach(function (item, i) {
 	item.prepend(i + 1 + '.');
@@ -58,9 +63,6 @@ accardionsTitle.forEach(function (title) {
 hamburger.addEventListener('click', () => {
 	hamburger.classList.toggle('is-active');
 	menuList.classList.toggle('is-active');
-	if (menuList.classList.contains('is-active')) {
-		body.style.overflowY = 'hidden';
-	} else {
-		body.style.overflowY = '';
-	}
+
 })
+

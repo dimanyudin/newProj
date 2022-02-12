@@ -9,37 +9,40 @@
 		@@include('html/header.html',{})
 		<main class="main">
 			<section class="hero">
-				<div class="container inner">
-					<section class="hero-description">
-						<h1 class="hero__title title">Nature, Warmth, and Beauty in One Space</h1>
+				<div class="container hero-container inner">
+					<div class="hero-description">
+						<h1 class="hero__title title">Nature, Warmth, and <br> Beauty in One Space</h1>
 						<p class="hero__text text">
 							One place to release all the stress, bring back happines, and get back to nature. We provide the best room
 							and nature for you. Come visit us anytime you want.
 						</p>
 						<a href="#" class="hero__link btn">Reservation</a>
-					</section>
-					<div class="hero__img img">
-						<img src="@img/img-hero.jpg" alt="home" width="588" height="685">
+					</div>
+					<div class="hero-img img">
+						<img src="@img/img-hero.jpg" alt="home">
 					</div>
 				</div>
 			</section>
 			<section class="about">
-				<div class="container inner">
+				<div class="container about-container inner">
 					<section class="about-description">
 						<h2 class="about__title title">Cozy and Down to Earth Cootage Hotel in Norway.</h2>
-						<p class="about__text text">
-							Our Cootage Hotel is an intimate hideway concieved for dicerning travelers. It faces directly the unique
-							and
-							spectacular panorama of the Hallerbos Jungle.
-						</p>
-						<p class="about__text text">
-							Cootels extends along a private, quiet, and beautiful nature. Stay away from crowd and enjoy the cozy and
-							beauty with us.
-						</p>
+						<div class="about__text-inner">
+							<p class="about__text text">
+								Our Cootage Hotel is an intimate hideway concieved for dicerning travelers. It faces directly the unique
+								and
+								spectacular panorama of the Hallerbos Jungle.
+							</p>
+							<p class="about__text text">
+								Cootels extends along a private, quiet, and beautiful nature. Stay away from crowd and enjoy the cozy
+								and
+								beauty with us.
+							</p>
+						</div>
 						<a href="#" class="about__link btn">Learn More</a>
 					</section>
 					<div class="about__img img">
-						<img src="@img/about-img.jpg" alt="home tree" width="384" height="576">
+						<img src="@img/about-img.jpg" alt="home tree" width="" height="">
 					</div>
 				</div>
 			</section>
@@ -57,7 +60,7 @@
 							<img src="@img/benefit-1.jpg" alt="home tree" width="384" height="384">
 						</div>
 					</article>
-					<article class="benefit-item inner">
+					<article class="benefit-item benefit-item--revers inner">
 						<div class="benefit-item__descr benefit-item__descr--order">
 							<h2 class="benefit__title title">100% Organic Food</h2>
 							<p class="benefit__text text">

@@ -4,67 +4,75 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.min.css?_v=20220113094717">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220207203202">
 	<title>Главная</title>
 </head>
 
 <body>
 	<div class="wripper">
-		<header>
+		<header class="header">
 	<div class="container container__header">
 		<a href="" class="logo">
 			<picture><source srcset="img/logo/Cootels.webp"type="image/webp"><img src="img/logo/Cootels.png" alt="logo"></picture>
 		</a>
-		<button class="menu-hamb hamburger hamburger--vortex " type="button">
-			<span class="hamburger-box">
-				<span class="hamburger-inner"></span>
-			</span>
-		</button>
 
-		<nav class="menu">
-			<ul class="menu-list">
-				<li class="menu-item"><a href="#" class="menu-link">Rooms</a></li>
-				<li class="menu-item"><a href="#" class="menu-link">Reservation</a></li>
-				<li class="menu-item"><a href="#" class="menu-link">Contacs</a></li>
-			</ul>
-		</nav>
-		<a href="#" class="started-link started-link--white btn">Get Started</a>
+		<div class="menu">
+			<nav class="menu-body">
+				<ul class="menu-list">
+					<li class="menu-item"><a href="#" class="menu-link">Rooms</a></li>
+					<li class="menu-item"><a href="#" class="menu-link">Reservation</a></li>
+					<li class="menu-item"><a href="#" class="menu-link">Contacs</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<div class="started">
+			<a href="#" class="started-link started-link--white btn">Get Started</a>
+			<button class="menu-hamb hamburger hamburger--vortex " type="button">
+				<span class="hamburger-box">
+					<span class="hamburger-inner"></span>
+				</span>
+			</button>
+		</div>
 
 	</div>
 </header>
 		<main class="main">
 			<section class="hero">
-				<div class="container inner">
-					<section class="hero-description">
-						<h1 class="hero__title title">Nature, Warmth, and Beauty in One Space</h1>
+				<div class="container hero-container inner">
+					<div class="hero-description">
+						<h1 class="hero__title title">Nature, Warmth, and <br> Beauty in One Space</h1>
 						<p class="hero__text text">
 							One place to release all the stress, bring back happines, and get back to nature. We provide the best room
 							and nature for you. Come visit us anytime you want.
 						</p>
 						<a href="#" class="hero__link btn">Reservation</a>
-					</section>
-					<div class="hero__img img">
-						<picture><source srcset="img/img-hero.webp"type="image/webp"><img src="img/img-hero.jpg" alt="home" width="588" height="685"></picture>
+					</div>
+					<div class="hero-img img">
+						<picture><source srcset="img/img-hero.webp"type="image/webp"><img src="img/img-hero.jpg" alt="home"></picture>
 					</div>
 				</div>
 			</section>
 			<section class="about">
-				<div class="container inner">
+				<div class="container about-container inner">
 					<section class="about-description">
 						<h2 class="about__title title">Cozy and Down to Earth Cootage Hotel in Norway.</h2>
-						<p class="about__text text">
-							Our Cootage Hotel is an intimate hideway concieved for dicerning travelers. It faces directly the unique
-							and
-							spectacular panorama of the Hallerbos Jungle.
-						</p>
-						<p class="about__text text">
-							Cootels extends along a private, quiet, and beautiful nature. Stay away from crowd and enjoy the cozy and
-							beauty with us.
-						</p>
+						<div class="about__text-inner">
+							<p class="about__text text">
+								Our Cootage Hotel is an intimate hideway concieved for dicerning travelers. It faces directly the unique
+								and
+								spectacular panorama of the Hallerbos Jungle.
+							</p>
+							<p class="about__text text">
+								Cootels extends along a private, quiet, and beautiful nature. Stay away from crowd and enjoy the cozy
+								and
+								beauty with us.
+							</p>
+						</div>
 						<a href="#" class="about__link btn">Learn More</a>
 					</section>
 					<div class="about__img img">
-						<picture><source srcset="img/about-img.webp"type="image/webp"><img src="img/about-img.jpg" alt="home tree" width="384" height="576"></picture>
+						<picture><source srcset="img/about-img.webp"type="image/webp"><img src="img/about-img.jpg" alt="home tree" width="" height=""></picture>
 					</div>
 				</div>
 			</section>
@@ -82,7 +90,7 @@
 							<picture><source srcset="img/benefit-1.webp"type="image/webp"><img src="img/benefit-1.jpg" alt="home tree" width="384" height="384"></picture>
 						</div>
 					</article>
-					<article class="benefit-item inner">
+					<article class="benefit-item benefit-item--revers inner">
 						<div class="benefit-item__descr benefit-item__descr--order">
 							<h2 class="benefit__title title">100% Organic Food</h2>
 							<p class="benefit__text text">
@@ -382,7 +390,7 @@
 </footer>
 	</div>
 
-	<script src="js/app.min.js?_v=20220113094717"></script>
+	<script src="js/app.min.js?_v=20220207203202"></script>
 </body>
 
 </html>
